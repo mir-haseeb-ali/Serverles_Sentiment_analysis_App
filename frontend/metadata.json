@@ -1,0 +1,6 @@
+{
+  "name": "ReviewSense",
+  "description": "A professional sentiment analysis dashboard for YouTube comments, featuring real-time data visualization, aspect analysis, and trend tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

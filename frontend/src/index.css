@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  /* Moody Dark Palette */
+  --mauve-shadow: #533747;
+  --vintage-grape: #5f506b;
+  --blue-slate: #6a6b83;
+  --cool-steel: #76949f;
+  --pearl-aqua: #86bbbd;
+
+  /* Functional Mappings for Moody Dark Mode */
+  --bg: #1c1c24; /* Deep midnight foundation */
+  --card-bg: rgba(83, 55, 71, 0.18); /* Mauve-Shadow resonance */
+  --border: rgba(106, 107, 131, 0.25); /* Blue-Slate structure */
+  
+  --accent-cyan: var(--pearl-aqua);
+  --accent-purple: var(--vintage-grape);
+  --accent-red: #d66464; /* Sophisticated red to match the moody tone */
+  --accent-lime: #98b06d;
+  --accent-yellow: #d1b88a;
+  
+  --text-main: #e2e8f0; /* Crisp slate white */
+  --text-muted: var(--blue-slate);
+  
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-main);
+  @apply antialiased font-sans;
+}
+
+/* Glassmorphism / High Density Card - Moody Dark Adjusted */
+.glass {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.4);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.border-main {
+  border-color: var(--border);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[var(--blue-slate)]/40 rounded-full hover:bg-[var(--blue-slate)]/60 transition-colors;
+}
+
+/* Layout density adjustments */
+.compact-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
