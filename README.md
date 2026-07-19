@@ -389,9 +389,7 @@ This project demonstrates experience with:
 
 **Mir Haseeb Ali**
 
-B.Tech CSE (AI & ML)
-
-Machine Learning Intern
+B.Tech CSE (AI & ML) 
 
 Hyderabad, India
 
