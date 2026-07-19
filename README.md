@@ -26,17 +26,10 @@ The application automatically searches YouTube review videos, filters spam and i
 
 Example:
 
-```
-screenshots/
+<img width="1366" height="683" alt="1" src="https://github.com/user-attachments/assets/586f2b37-2e5e-4348-86f3-8195b43cef50" />
+<img width="1366" height="685" alt="2" src="https://github.com/user-attachments/assets/70a60a32-a0cd-4539-918a-777b7749973f" />
 
-homepage.png
 
-results.png
-
-keywords.png
-
-architecture.png
-```
 
 ---
 
@@ -127,8 +120,47 @@ backend/
 ├── requirements.txt
 
 frontend/
+│
+├── api/
+│   └── analyze.ts
+│
+├── src/
+│   ├── assets/
+│   │   └── images/
+|   |       └── logo.jpg
+│   ├── components/
+│   │   ├── AspectAnalysis.tsx
+│   │   ├── CommentsList.tsx
+│   │   ├── DashboardSkeleton.tsx
+│   │   ├── Keywords.tsx
+│   │   ├── SearchBar.tsx
+│   │   ├── SentimentChart.tsx
+│   │   ├── SummaryCards.tsx
+│   │   └── VideoList.tsx
+│   │
+│   ├── lib/
+│   │   └── utils.ts
+│   │
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── index.css
+│   └── types.ts
+│
+├── .env.example
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+├── server.ts
+├── tsconfig.json
+├── vercel.json
+└── vite.config.ts
 
 screenshots/
+├──1.png
+├── 2.png
+└── 3.png
 
 README.md
 
@@ -363,12 +395,6 @@ Machine Learning Intern
 
 Hyderabad, India
 
-LinkedIn:
+LinkedIn:  : https://linkedin.com/in/mir-md-haseeb-ali
 
-GitHub:
-
----
-
-# 📄 License
-
-MIT License
+GitHub:   https://github.com/mir-haseeb-ali
